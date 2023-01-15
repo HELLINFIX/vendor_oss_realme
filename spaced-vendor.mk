@@ -1660,7 +1660,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
     vendor/realme/spaced/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
     vendor/realme/spaced/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
     vendor/realme/spaced/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
@@ -2512,7 +2511,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpkm.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
-    vendor/realme/spaced/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_cust_base.so \
     vendor/realme/spaced/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
@@ -2636,6 +2634,7 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     mediatek-wfo-legacy \
+    libpowerhal \
     libwifi-hal-mtk \
     HotwordEnrollmentOKGoogleCORTEXM4 \
     com.android.hotwordenrollment.common.util \
