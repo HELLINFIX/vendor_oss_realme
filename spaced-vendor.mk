@@ -378,12 +378,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/spaced/proprietary/odm/vendor/app/mcRegistry/511ead0a000000000000000000000000.tabin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/511ead0a000000000000000000000000.tabin \
-    vendor/realme/spaced/proprietary/system_ext/lib/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuron_graph_delegate.mtk.so \
-    vendor/realme/spaced/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.utils@2.0.so \
-    vendor/realme/spaced/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/realme/spaced/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
-    vendor/realme/spaced/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
-    vendor/realme/spaced/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
+    vendor/realme/spaced/proprietary/vendor/lib/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuron_graph_delegate.mtk.so \
+    vendor/realme/spaced/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
+    vendor/realme/spaced/proprietaryvendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
+    vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
+    vendor/realme/spaced/proprietary/vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
+    vendor/realme/spaced/proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuron_graph_delegate.mtk.so \
     vendor/realme/spaced/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/realme/spaced/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/realme/spaced/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
@@ -1579,7 +1579,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconnfem.so \
     vendor/realme/spaced/proprietary/vendor/lib/libcrypto-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-md.so \
     vendor/realme/spaced/proprietary/vendor/lib/libcrypto-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-ss.so \
-    vendor/realme/spaced/proprietary/vendor/lib/libcurl-md.:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-md. \
+    vendor/realme/spaced/proprietary/vendor/lib/libcurl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-md.so \
     vendor/realme/spaced/proprietary/vendor/lib/libcurl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-ss.so \
     vendor/realme/spaced/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
     vendor/realme/spaced/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
@@ -2623,9 +2623,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
-    libwifi-hal-mtk \
     ImsService \
-    HotwordEnrollmentOKGoogleCORTEXM4 \
     mediatek-common \
     mediatek-framework \
     mediatek-gwsd \
@@ -2638,8 +2636,10 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     mediatek-wfo-legacy \
+    libwifi-hal-mtk \
+    HotwordEnrollmentOKGoogleCORTEXM4 \
     com.android.hotwordenrollment.common.util \
-    android.hardware.neuralnetworks@1.3-service-mtk-gpu \
+    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
     android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.wifi.hostapd \
     android.hardware.wifi.supplicant \
