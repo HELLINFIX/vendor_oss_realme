@@ -36,6 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.charger@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.charger@1.0-service \
     vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service \
+    vendor/realme/spaced/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek \
+    vendor/realme/spaced/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/realme/spaced/proprietary/odm/bin/iwpriv_vendor:$(TARGET_COPY_OUT_ODM)/bin/iwpriv_vendor \
     vendor/realme/spaced/proprietary/odm/bin/mtkftm:$(TARGET_COPY_OUT_ODM)/bin/mtkftm \
     vendor/realme/spaced/proprietary/odm/bin/rpmbengclient_test:$(TARGET_COPY_OUT_ODM)/bin/rpmbengclient_test \
@@ -335,7 +337,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/spaced/proprietary/odm/lib64/libAncHumVideoBase.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumVideoBase.so \
     vendor/realme/spaced/proprietary/odm/lib64/libstblur_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_api.so \
     vendor/realme/spaced/proprietary/odm/lib64/libAncHumBokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libAncHumBokeh.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libmxmafa.so:$(TARGET_COPY_OUT_ODM)/lib64/libmxmafa.so
+    vendor/realme/spaced/proprietary/odm/lib64/libmxmafa.so:$(TARGET_COPY_OUT_ODM)/lib64/libmxmafa.so \
     vendor/realme/spaced/proprietary/odm/lib64/anc.capacitive.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.capacitive.hal.so \
     vendor/realme/spaced/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/realme/spaced/proprietary/odm/lib64/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G2.default.so \
