@@ -248,6 +248,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.4-service.clearkey",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.4-service.widevine",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
@@ -278,15 +287,6 @@ prebuilt_etc_xml {
 	name: "oplus_wifi_supplicant_device",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/oplus_wifi_supplicant_device.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "power-mtk",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/power-mtk.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
